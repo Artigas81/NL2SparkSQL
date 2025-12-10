@@ -109,6 +109,17 @@ python sqlexplain.py
 ```
 
 3. **`test.py`** – Perform natural language queries. LangChain translates plain English queries into Spark SQL, executes them, and returns results.
+
+Locate this line in **`test.py`** and update the path:
+
+```python
+# TODO: Update this path to your local repository location
+# Current: path = f"<home>/NL2SparkSQL/spark-warehouse/{table_name}"
+# Change <home> to your actual directory path
+path = f"<home>/NL2SparkSQL/spark-warehouse/{table_name}"
+```
+Then,
+
 ```bash
 python test.py
 ```
