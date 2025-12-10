@@ -1,5 +1,3 @@
-# Recall to install ChatGoogleGenerativeAI with pip install -U langchain-google-genai
-# and export the GOOGLE_API_KEY into <venv>/bin/activate
 from llm import get_llm
 
 import pyspark
@@ -94,7 +92,7 @@ if __name__ == "__main__":
 	table_name="hadoop_poem"
 	# Remove table
 	import shutil
-	path=f"/home/marc/nl2sql/spark-warehouse/{table_name}"
+	path=f"<home>/NL2SparkSQL/spark-warehouse/{table_name}"
 	try:
 		shutil.rmtree(path)
 		print(f"Removed directory: {path}")
