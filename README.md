@@ -51,9 +51,6 @@ source sparkai-env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Install the package
-pip install -e .
 ```
 
 You should activate the virtual environment every time you want to run the code.
